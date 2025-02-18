@@ -50,6 +50,6 @@ let emailError = {
 logger.registerHandler(for: .error, handler: emailError)
 
 
-logger.log("Infomational Message", level: .info)
+logger.log("Informational Message", level: .info)
 logger.log("Warning message", level: .warning)
 logger.log("We have an error", level: .error)
