@@ -43,4 +43,21 @@ func testGenericComparable<T: Comparable>(a: T, b: T) -> Bool{
 
 testSwap()
 
+// overloading with generics
+func swap(a: inout Int, b: inout Int) {
+    (b, a) = (a, b)
+}
 
+func swap(a: inout String, b: inout String) {
+    (b, a) = (a, b)
+}
+
+func swap<T>(a: inout T, b: inout T) {
+    (b, a) = (a, b)
+}
+
+var a = "1"
+var b = "2"
+print("a = \(a), b = \(b)")
+swap(a: &a, b: &b)
+print("a = \(a), b = \(b)")
