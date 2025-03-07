@@ -38,7 +38,9 @@ func testQueue() {
     var intQ2 = GenericQueue<Int>()
     intQ2.add(item: 2)
     intQ2.add(item: 4)
-    print(intQ2.getItem()!)
+    if let item = intQ2.getItem() {
+        print(item)
+    }
     intQ2.add(item: 6)
 
 }

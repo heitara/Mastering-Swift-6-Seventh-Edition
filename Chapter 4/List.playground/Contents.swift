@@ -48,7 +48,9 @@ func testList() {
     var list = List<String>()
     list.add(item: "Hello")
     list.add(item: "World")
-    print(list.getItemAtIndex(index: 1)!)
+    if let item = list.getItemAtIndex(index: 1) {
+        print(item)
+    }
     print(list.sorted())
 
     var list2 = List<Int>()
