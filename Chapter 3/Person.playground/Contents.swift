@@ -6,7 +6,7 @@ protocol Person {
     var birthDate: Date { get set }
     var profession: String { get }
 
-    init(firstName: String,lastName: String, birthDate: Date)
+    init(firstName: String, lastName: String, birthDate: Date)
 }
 
 
@@ -90,7 +90,7 @@ for person in people where person is SwiftProgrammer {
 
 
 
-let me:Person = SwiftProgrammer(firstName: "Jon", lastName: "Hoffman", birthDate: Date())
+let me: Person = SwiftProgrammer(firstName: "Jon", lastName: "Hoffman", birthDate: Date())
 if me is SwiftProgrammer {
     print("Swift Programmer")
 }
